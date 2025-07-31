@@ -1,0 +1,100 @@
+:root {
+    --bg: #f5f5f5;
+    --text: #222;
+    --panel-bg: #fff;
+    --label-bg: #222;
+    --label-color: #fff;
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #eee;
+    --panel-bg: #1e1e1e;
+    --label-bg: #333;
+    --label-color: #fff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  h1 {
+    background: var(--label-bg);
+    color: var(--label-color);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background: var(--panel-bg);
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .editor-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+    max-width: 100%;
+    border-right: 1px solid #ccc;
+    background: var(--panel-bg);
+  }
+  
+  .panel label {
+    background: var(--label-bg);
+    color: var(--label-color);
+    padding: 5px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    resize: none;
+    font-family: monospace;
+    font-size: 14px;
+    background: var(--panel-bg);
+    color: var(--text);
+    outline: none;
+  }
+  
+  iframe {
+    width: 100%;
+    border: none;
+    height: 100%;
+  }
+  
+  .preview {
+    flex: 1;
+  }
+  
